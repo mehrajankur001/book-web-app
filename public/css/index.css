@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  align-content: center;
+  background-color: #041d31;
+  position: fixed;
+}
+
+.header {
+  height: 119px;
+  background-color: #1f6331;
+  width: 960px;
+  margin: 0px auto;
+}
+
+.header h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.bnrLft {
+  margin: 0px auto;
+  width: 960px;
+}
+
+.menu {
+  height: 41px;
+  background-color: #379279;
+  width: 720px;
+  margin: 0px auto;
+  border-radius: 5px;
+  align-items: center;
+  /*border-right: 1px solid #0058e6;
+	border-left:1px solid #0058e6;*/
+}
+
+.menu ul {
+  list-style: none;
+  background-color: #0aa581;
+  z-index: 999;
+}
+
+.menu ul li {
+  float: left;
+  border-right: 1px solid #0aa581;
+}
+
+.menu ul li:last-child {
+  border-right: 0;
+}
+.menu ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  font-family: arial;
+  transition: 0.5s all ease;
+  font-size: large;
+}
+.menu ul li a:hover {
+  color: white;
+  background: #055a4b;
+}
+.menu ul li {
+  position: relative;
+}
+.menu ul li ul {
+  position: absolute;
+  left: -9999px;
+}
+.menu ul li:hover ul {
+  left: 0;
+}
+.menu ul li ul li {
+  border-bottom: 0.5px solid black;
+  border-top: 0.5px solid black;
+  width: 200px;
+  float: left;
+  position: relative;
+}
+.menu ul li ul li:last-child {
+  border-top: 1px solid #0058e6;
+}
+
+.menu ul li ul li ul {
+  position: absolute;
+  top: -99999999px;
+}
+.menu ul li ul li:hover ul {
+  left: 200px;
+  top: -1px;
+}
+.menu ul li ul li ul li {
+  border-top: 0.5px solid #0058e6;
+  border-bottom: 0.5px solid #0058e6;
+  width: 200px;
+  float: left;
+  position: relative;
+  border-left: 1px solid #0058e6;
+}
+
+.m2 {
+  height: 600px;
+  background-color: #1f6331;
+  width: 960px;
+  margin: 0px auto;
+}
+.m2 p {
+  font-size: 30px;
+  margin: 10px;
+  padding: 5px;
+  margin-top: 0px;
+}
+.m3 {
+  height: 119px;
+  width: 960px;
+  margin: 0px auto;
+  background-image: linear-gradient(to right, black, #0058e6);
+}
+.m3 p {
+  margin: 10px;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.label {
+  font-size: 50px;
+  margin-right: 10px;
+  transform: translateY(30px);
+}
+
+.footer {
+  transform: translateY(500px);
+  position: sticky;
+}
